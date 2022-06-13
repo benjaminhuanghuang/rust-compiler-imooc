@@ -28,6 +28,7 @@ impl From<u8> for Opcode {
       0x2C => Opcode::GETCHAR,
       0x5B => Opcode::LB,
       0x5D => Opcode::RB,
+      _ => unreachable!(),
     }
   }
 }
